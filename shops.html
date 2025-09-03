@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shops - Pine City Mall</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/shops.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Pine City Mall</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="map.html" class="nav-link">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="shops.html" class="nav-link active">Shops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="movies.html" class="nav-link">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="shops-hero">
+            <div class="hero-content">
+                <h1>Discover Our Shops</h1>
+                <p>Explore over 150 stores across various categories</p>
+            </div>
+        </section>
+
+        <section class="search-section">
+            <div class="container">
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" class="search-input" placeholder="Search shops by name or category...">
+                        <button class="search-btn">🔍</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="filters-section">
+            <div class="container">
+                <div class="filters-container">
+                    <button class="filter-btn active" data-category="all">All Categories</button>
+                    <button class="filter-btn" data-category="clothing">Clothing</button>
+                    <button class="filter-btn" data-category="electronics">Electronics</button>
+                    <button class="filter-btn" data-category="supermarket">Supermarket</button>
+                    <button class="filter-btn" data-category="restaurant">Restaurants</button>
+                    <button class="filter-btn" data-category="beauty">Beauty & Health</button>
+                    <button class="filter-btn" data-category="sports">Sports & Fitness</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="shops-section">
+            <div class="container">
+                <div class="shops-grid">
+                    <!-- Clothing Stores -->
+                    <div class="shop-item" data-category="clothing">
+                        <div class="shop-card">
+                            <div class="shop-logo">
+                                <div class="logo-icon">👕</div>
+                                <div class="logo-text">TT</div>
+                            </div>
+                            <div class="shop-info">
+                                <h3>Trendy Threads</h3>
+                                <p class="shop-category">Clothing & Fashion</p>
+                                <p class="shop-description">Contemporary fashion for men and women with the latest trends and styles.</p>
+                                <div class="shop-details">
+                                    <span class="shop-location">📍 Level 1, Section A</span>
+                                    <span class="shop-hours">🕒 9:00 AM - 9:00 PM</span>
+                                </div>
+                                <a href="shop-detail.html?id=trendy-threads" class="shop-link">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shop-item" data-category="clothing">
+                        <div class="shop-card">
+                            <div class="shop-logo">
+                                <div class="logo-icon">👗</div>
+                                <div class="logo-text">SF</div>
+                            </div>
+                            <div class="shop-info">
+                                <h3>Style Factory</h3>
+                                <p class="shop-category">Clothing & Fashion</p>
+                                <p class="shop-description">Premium clothing store offering designer brands and exclusive collections.</p>
+                                <div class="shop-details">
+                                    <span class="shop-location">📍 Level 1, Section B</span>
+                                    <span class="shop-hours">🕒 9:00 AM - 9:00 PM</span>
+                                </div>
+                                <a href="shop-detail.html?id=style-factory" class="shop-link">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Electronics Stores -->
+                    <div class="shop-item" data-category="electronics">
+                        <div class="shop-card">
+                            <div class="shop-logo">
+                                <div class="logo-icon">💻</div>
+                                <div class="logo-text">TH</div>
+                            </div>
+                            <div class="shop-info">
+                                <h3>Tech Haven</h3>
+                                <p class="shop-category">Electronics & Technology</p>
+                                <p class="shop-description">Latest gadgets, smartphones, laptops, and tech accessories.</p>
+                                <div class="shop-details">
+                                    <span class="shop-location">📍 Level 2, Section A</span>
+                                    <span class="shop-hours">🕒 9:00 AM - 9:00 PM</span>
+                                </div>
+                                <a href="shop-detail.html?id=tech-haven" class="shop-link">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Supermarket -->
+                    <div class="shop-item" data-category="supermarket">
+                        <div class="shop-card">
+                            <div class="shop-logo">
+                                <div class="logo-icon">🛒</div>
+                                <div class="logo-text">FM</div>
+                            </div>
+                            <div class="shop-info">
+                                <h3>Fresh Market</h3>
+                                <p class="shop-category">Supermarket & Groceries</p>
+                                <p class="shop-description">Fresh produce, groceries, and household essentials for your daily needs.</p>
+                                <div class="shop-details">
+                                    <span class="shop-location">📍 Level 1, Section C</span>
+                                    <span class="shop-hours">🕒 7:00 AM - 10:00 PM</span>
+                                </div>
+                                <a href="shop-detail.html?id=fresh-market" class="shop-link">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Restaurants -->
+                    <div class="shop-item" data-category="restaurant">
+                        <div class="shop-card">
+                            <div class="shop-logo">
+                                <div class="logo-icon">🐟</div>
+                                <div class="logo-text">CB</div>
+                            </div>
+                            <div class="shop-info">
+                                <h3>Coastal Bites</h3>
+                                <p class="shop-category">Restaurant & Dining</p>
+                                <p class="shop-description">Seafood restaurant serving fresh coastal cuisine in a relaxed atmosphere.</p>
+                                <div class="shop-details">
+                                    <span class="shop-location">📍 Level 2, Section B</span>
+                                    <span class="shop-hours">🕒 11:00 AM - 11:00 PM</span>
+                                </div>
+                                <a href="shop-detail.html?id=coastal-bites" class="shop-link">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shop-item" data-category="restaurant">
+                        <div class="shop-card">
+                            <div class="shop-logo">
+                                <div class="logo-icon">🍕</div>
+                                <div class="logo-text">PP</div>
+                            </div>
+                            <div class="shop-info">
+                                <h3>Pizza Palace</h3>
+                                <p class="shop-category">Restaurant & Dining</p>
+                                <p class="shop-description">Authentic Italian pizza and pasta made with fresh ingredients.</p>
+                                <div class="shop-details">
+                                    <span class="shop-location">📍 Level 1, Food Court</span>
+                                    <span class="shop-hours">🕒 10:00 AM - 10:00 PM</span>
+                                </div>
+                                <a href="shop-detail.html?id=pizza-palace" class="shop-link">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Beauty & Health -->
+                    <div class="shop-item" data-category="beauty">
+                        <div class="shop-card">
+                            <div class="shop-logo">
+                                <div class="logo-icon">💄</div>
+                                <div class="logo-text">BG</div>
+                            </div>
+                            <div class="shop-info">
+                                <h3>Beauty Glow</h3>
+                                <p class="shop-category">Beauty & Health</p>
+                                <p class="shop-description">Cosmetics, skincare, and beauty products from top international brands.</p>
+                                <div class="shop-details">
+                                    <span class="shop-location">📍 Level 2, Section C</span>
+                                    <span class="shop-hours">🕒 9:00 AM - 9:00 PM</span>
+                                </div>
+                                <a href="shop-detail.html?id=beauty-glow" class="shop-link">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sports & Fitness -->
+                    <div class="shop-item" data-category="sports">
+                        <div class="shop-card">
+                            <div class="shop-logo">
+                                <div class="logo-icon">⚽</div>
+                                <div class="logo-text">SF</div>
+                            </div>
+                            <div class="shop-info">
+                                <h3>Sports Fit</h3>
+                                <p class="shop-category">Sports & Fitness</p>
+                                <p class="shop-description">Sports equipment, athletic wear, and fitness accessories for all levels.</p>
+                                <div class="shop-details">
+                                    <span class="shop-location">📍 Level 2, Section D</span>
+                                    <span class="shop-hours">🕒 9:00 AM - 9:00 PM</span>
+                                </div>
+                                <a href="shop-detail.html?id=sports-fit" class="shop-link">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Pine City Mall</h3>
+                    <p>Your premier shopping destination in the heart of the city.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="shops.html">Shops</a></li>
+                        <li><a href="map.html">Map</a></li>
+                        <li><a href="movies.html">Movies</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📍 123 Mall Street, Pine City</p>
+                    <p>📞 (555) 123-4567</p>
+                    <p>✉️ info@pinecitymall.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Business Hours</h4>
+                    <p>Mon-Sat: 9:00 AM - 9:00 PM</p>
+                    <p>Sunday: 10:00 AM - 8:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pine City Mall. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

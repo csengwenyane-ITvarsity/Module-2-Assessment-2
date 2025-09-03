@@ -1,0 +1,336 @@
+/* Shops Page Hero */
+.shops-hero {
+    background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%);
+    color: white;
+    text-align: center;
+    padding: 5rem 0;
+    position: relative;
+}
+
+.shops-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.1)"/><circle cx="10" cy="60" r="0.5" fill="rgba(255,255,255,0.1)"/><circle cx="90" cy="40" r="0.5" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.2;
+}
+
+.shops-hero .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.shops-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.shops-hero p {
+    font-size: 1.25rem;
+    opacity: 0.95;
+}
+
+/* Search Section */
+.search-section {
+    padding: 3rem 0;
+    background: white;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 2px solid #e5e7eb;
+    border-radius: 50px;
+    padding: 0.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    background: transparent;
+}
+
+.search-input::placeholder {
+    color: #9ca3af;
+}
+
+.search-btn {
+    background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.search-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Filters Section */
+.filters-section {
+    padding: 2rem 0;
+    background: #f8fafc;
+}
+
+.filters-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.filter-btn {
+    background: white;
+    border: 2px solid #e5e7eb;
+    color: #6b7280;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.filter-btn:hover {
+    border-color: #8B5CF6;
+    color: #8B5CF6;
+}
+
+.filter-btn.active {
+    background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%);
+    color: white;
+    border-color: #8B5CF6;
+}
+
+/* Shops Section */
+.shops-section {
+    padding: 4rem 0;
+    background: white;
+}
+
+.shops-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.shop-item {
+    transition: all 0.3s ease;
+}
+
+.shop-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.shop-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    border-color: #8B5CF6;
+}
+
+.shop-logo {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.shop-card:hover .shop-logo {
+    border-color: #8B5CF6;
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+    transform: scale(1.05);
+}
+
+.logo-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.logo-text {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #8B5CF6;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Fallback for old image-based logos */
+.shop-logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.shop-info {
+    flex: 1;
+}
+
+.shop-info h3 {
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.shop-category {
+    color: #8B5CF6;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.shop-description {
+    color: #6b7280;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.shop-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.shop-location,
+.shop-hours {
+    color: #9ca3af;
+    font-size: 0.9rem;
+}
+
+.shop-link {
+    display: inline-block;
+    background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%);
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.shop-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(139, 92, 246, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .shops-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .shops-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .shop-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+    
+    .shop-logo {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+    }
+    
+    .logo-icon {
+        font-size: 2rem;
+    }
+    
+    .logo-text {
+        font-size: 1rem;
+    }
+    
+    .shop-logo img {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+    }
+    
+    .filters-container {
+        justify-content: center;
+    }
+    
+    .filter-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .shops-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .search-box {
+        max-width: 100%;
+    }
+    
+    .shop-card {
+        padding: 1rem;
+    }
+    
+    .shop-logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .logo-icon {
+        font-size: 1.5rem;
+    }
+    
+    .logo-text {
+        font-size: 0.9rem;
+    }
+    
+    .shop-logo img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .shop-info h3 {
+        font-size: 1.25rem;
+    }
+}

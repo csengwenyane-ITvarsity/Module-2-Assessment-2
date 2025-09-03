@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details - Pine City Mall</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/movie-detail.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Pine City Mall</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="map.html" class="nav-link">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="shops.html" class="nav-link">Shops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="movies.html" class="nav-link active">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <a href="movies.html" class="back-link">← Back to Movies</a>
+                    <h1 id="movie-title">Movie Title</h1>
+                    <p id="movie-genre">Genre • Subgenre</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="movie-detail-section">
+            <div class="container">
+                <div class="movie-detail-container">
+                    <div class="movie-poster-section">
+                        <div class="movie-poster">
+                            <img id="movie-poster-img" src="" alt="Movie Poster">
+                            <div class="age-restriction" id="age-restriction">PG-13</div>
+                        </div>
+                        <div class="movie-quick-info">
+                            <div class="info-item">
+                                <span class="info-label">Duration:</span>
+                                <span class="info-value" id="movie-duration">2h 15m</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Rating:</span>
+                                <span class="info-value" id="movie-rating">8.2/10</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Release Date:</span>
+                                <span class="info-value" id="movie-release-date">2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="movie-content">
+                        <div class="movie-synopsis">
+                            <h2>Synopsis</h2>
+                            <p id="movie-synopsis">Movie synopsis will be loaded here...</p>
+                        </div>
+
+                        <div class="movie-cast">
+                            <h2>Cast</h2>
+                            <p id="movie-cast">Cast information will be loaded here...</p>
+                        </div>
+
+                        <div class="movie-showtimes">
+                            <h2>Showtimes</h2>
+                            <div class="showtimes-grid" id="showtimes-grid">
+                                <!-- Showtimes will be loaded here -->
+                            </div>
+                        </div>
+
+                        <div class="movie-gallery">
+                            <h2>Gallery</h2>
+                            <div class="gallery-grid" id="movie-gallery">
+                                <!-- Gallery images will be loaded here -->
+                            </div>
+                        </div>
+
+                        <div class="movie-actions">
+                            <a href="#" class="cta-button" id="book-tickets">Book Tickets</a>
+                            <a href="#" class="secondary-button" id="watch-trailer">Watch Trailer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Pine City Mall</h3>
+                    <p>Your premier shopping destination in the heart of the city.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="shops.html">Shops</a></li>
+                        <li><a href="map.html">Map</a></li>
+                        <li><a href="movies.html">Movies</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📍 123 Mall Street, Pine City</p>
+                    <p>📞 (555) 123-4567</p>
+                    <p>✉️ info@pinecitymall.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Business Hours</h4>
+                    <p>Mon-Sat: 9:00 AM - 9:00 PM</p>
+                    <p>Sunday: 10:00 AM - 8:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pine City Mall. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/movie-detail.js"></script>
+</body>
+</html>

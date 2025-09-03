@@ -1,0 +1,387 @@
+/* Map Page Hero */
+.map-hero {
+    background: linear-gradient(135deg, #84CC16 0%, #65A30D 100%);
+    color: white;
+    text-align: center;
+    padding: 5rem 0;
+    position: relative;
+}
+
+.map-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.1)"/><circle cx="10" cy="60" r="0.5" fill="rgba(255,255,255,0.1)"/><circle cx="90" cy="40" r="0.5" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.2;
+}
+
+.map-hero .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.map-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.map-hero p {
+    font-size: 1.25rem;
+    opacity: 0.95;
+}
+
+/* Map Controls */
+.map-controls {
+    padding: 3rem 0;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.level-selector h3 {
+    text-align: center;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.level-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.level-btn {
+    background: white;
+    border: 2px solid #e5e7eb;
+    color: #6b7280;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.level-btn:hover {
+    border-color: #84CC16;
+    color: #84CC16;
+}
+
+.level-btn.active {
+    background: linear-gradient(135deg, #84CC16 0%, #65A30D 100%);
+    color: white;
+    border-color: #84CC16;
+}
+
+/* Map Display */
+.map-display {
+    padding: 4rem 0;
+    background: #f8fafc;
+}
+
+.map-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.floor-map {
+    display: none;
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.floor-map.active {
+    display: block;
+}
+
+.map-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.map-header h2 {
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.map-header p {
+    color: #6b7280;
+    font-size: 1.1rem;
+}
+
+/* Mall Layout */
+.mall-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.area-label {
+    background: linear-gradient(135deg, #84CC16 0%, #65A30D 100%);
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Shop Markers */
+.shop-marker,
+.theater-marker,
+.entertainment-marker {
+    position: relative;
+    background: white;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.shop-marker:hover,
+.theater-marker:hover,
+.entertainment-marker:hover {
+    border-color: #84CC16;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.marker-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.marker-tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1f2937;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 100;
+    margin-bottom: 0.5rem;
+}
+
+.marker-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: #1f2937;
+}
+
+.shop-marker:hover .marker-tooltip,
+.theater-marker:hover .marker-tooltip,
+.entertainment-marker:hover .marker-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.marker-tooltip a {
+    color: #84CC16;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.marker-tooltip a:hover {
+    text-decoration: underline;
+}
+
+/* Escalators */
+.escalators {
+    text-align: center;
+}
+
+.escalator-up,
+.escalator-down {
+    font-size: 2rem;
+    margin: 0.5rem;
+    padding: 1rem;
+    background: #f3f4f6;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* Parking Layout */
+.parking-levels {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.parking-level {
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.parking-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.parking-icon {
+    font-size: 2rem;
+}
+
+.parking-details {
+    text-align: left;
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+.parking-features {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+.feature-icon {
+    font-size: 1.2rem;
+}
+
+/* Map Legend */
+.map-legend {
+    padding: 4rem 0;
+    background: white;
+}
+
+.map-legend h3 {
+    text-align: center;
+    color: #1f2937;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.legend-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: #f8fafc;
+    border-radius: 8px;
+    color: #6b7280;
+    font-size: 0.95rem;
+}
+
+.legend-icon {
+    font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .map-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .level-buttons {
+        gap: 0.5rem;
+    }
+    
+    .level-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .mall-layout {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .floor-map {
+        padding: 1.5rem;
+    }
+    
+    .parking-levels {
+        grid-template-columns: 1fr;
+    }
+    
+    .parking-features {
+        gap: 1rem;
+    }
+    
+    .legend-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .map-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .level-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .level-btn {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .floor-map {
+        padding: 1rem;
+    }
+    
+    .shop-marker,
+    .theater-marker,
+    .entertainment-marker {
+        padding: 0.75rem;
+    }
+    
+    .marker-icon {
+        font-size: 1.5rem;
+    }
+    
+    .parking-features {
+        flex-direction: column;
+        align-items: center;
+    }
+}

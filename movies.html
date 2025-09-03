@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies - Pine City Mall</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/movies.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Pine City Mall</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="map.html" class="nav-link">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="shops.html" class="nav-link">Shops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="movies.html" class="nav-link active">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="movies-hero">
+            <div class="hero-content">
+                <h1>Movie Showtimes</h1>
+                <p>Latest blockbusters and family favorites at Pine City Mall</p>
+            </div>
+        </section>
+
+        <section class="search-section">
+            <div class="container">
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" class="search-input" placeholder="Search movies by title or actors...">
+                        <button class="search-btn">🔍</button>
+                        <button class="clear-search-btn" style="display: none;">✕</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="filters-section">
+            <div class="container">
+                <div class="filters-container">
+                    <button class="filter-btn active" data-category="all">All Genres</button>
+                    <button class="filter-btn" data-category="action">Action</button>
+                    <button class="filter-btn" data-category="comedy">Comedy</button>
+                    <button class="filter-btn" data-category="drama">Drama</button>
+                    <button class="filter-btn" data-category="sci-fi">Sci-Fi</button>
+                    <button class="filter-btn" data-category="family">Family</button>
+                    <button class="filter-btn" data-category="thriller">Thriller</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="movies-section">
+            <div class="container">
+                <div class="movies-grid">
+                    <!-- Action Movies -->
+                    <div class="movie-item" data-category="action">
+                        <div class="movie-card">
+                            <div class="movie-poster">
+                                <img src="images/movie1.jpg" alt="Thunder Force Movie Poster">
+                                <div class="age-restriction">PG-13</div>
+                            </div>
+                            <div class="movie-info">
+                                <h3>Thunder Force</h3>
+                                <p class="movie-genre">Action • Adventure</p>
+                                <p class="movie-actors">Starring: Chris Evans, Ryan Gosling, Ana de Armas</p>
+                                <div class="movie-details">
+                                    <span class="movie-duration">⏱️ 2h 15m</span>
+                                    <span class="movie-rating">⭐ 8.2/10</span>
+                                </div>
+                                <div class="showtimes">
+                                    <h4>Showtimes:</h4>
+                                    <div class="time-slots">
+                                        <span class="time-slot">10:00 AM</span>
+                                        <span class="time-slot">1:30 PM</span>
+                                        <span class="time-slot">5:00 PM</span>
+                                        <span class="time-slot">8:30 PM</span>
+                                    </div>
+                                </div>
+                                <a href="movie-detail.html?id=thunder-force" class="movie-link">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comedy Movies -->
+                    <div class="movie-item" data-category="comedy">
+                        <div class="movie-card">
+                            <div class="movie-poster">
+                                <img src="images/movie2.jpg" alt="Laugh Factory Movie Poster">
+                                <div class="age-restriction">PG</div>
+                            </div>
+                            <div class="movie-info">
+                                <h3>Laugh Factory</h3>
+                                <p class="movie-genre">Comedy • Family</p>
+                                <p class="movie-actors">Starring: Will Ferrell, Melissa McCarthy, Kevin Hart</p>
+                                <div class="movie-details">
+                                    <span class="movie-duration">⏱️ 1h 45m</span>
+                                    <span class="movie-rating">⭐ 7.8/10</span>
+                                </div>
+                                <div class="showtimes">
+                                    <h4>Showtimes:</h4>
+                                    <div class="time-slots">
+                                        <span class="time-slot">11:00 AM</span>
+                                        <span class="time-slot">2:15 PM</span>
+                                        <span class="time-slot">6:30 PM</span>
+                                        <span class="time-slot">9:15 PM</span>
+                                    </div>
+                                </div>
+                                <a href="movie-detail.html?id=laugh-factory" class="movie-link">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Drama Movies -->
+                    <div class="movie-item" data-category="drama">
+                        <div class="movie-card">
+                            <div class="movie-poster">
+                                <img src="images/movie3.jpg" alt="The Silent Echo Movie Poster">
+                                <div class="age-restriction">R</div>
+                            </div>
+                            <div class="movie-info">
+                                <h3>The Silent Echo</h3>
+                                <p class="movie-genre">Drama • Mystery</p>
+                                <p class="movie-actors">Starring: Meryl Streep, Tom Hanks, Viola Davis</p>
+                                <div class="movie-details">
+                                    <span class="movie-duration">⏱️ 2h 30m</span>
+                                    <span class="movie-rating">⭐ 9.1/10</span>
+                                </div>
+                                <div class="showtimes">
+                                    <h4>Showtimes:</h4>
+                                    <div class="time-slots">
+                                        <span class="time-slot">12:00 PM</span>
+                                        <span class="time-slot">3:45 PM</span>
+                                        <span class="time-slot">7:15 PM</span>
+                                        <span class="time-slot">10:45 PM</span>
+                                    </div>
+                                </div>
+                                <a href="movie-detail.html?id=silent-echo" class="movie-link">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sci-Fi Movies -->
+                    <div class="movie-item" data-category="sci-fi">
+                        <div class="movie-card">
+                            <div class="movie-poster">
+                                <img src="images/movie4.jpg" alt="Galaxy Quest Movie Poster">
+                                <div class="age-restriction">PG-13</div>
+                            </div>
+                            <div class="movie-info">
+                                <h3>Galaxy Quest</h3>
+                                <p class="movie-genre">Sci-Fi • Adventure</p>
+                                <p class="movie-actors">Starring: Robert Downey Jr., Scarlett Johansson, Chris Hemsworth</p>
+                                <div class="movie-details">
+                                    <span class="movie-duration">⏱️ 2h 5m</span>
+                                    <span class="movie-rating">⭐ 8.5/10</span>
+                                </div>
+                                <div class="showtimes">
+                                    <h4>Showtimes:</h4>
+                                    <div class="time-slots">
+                                        <span class="time-slot">10:30 AM</span>
+                                        <span class="time-slot">2:00 PM</span>
+                                        <span class="time-slot">5:30 PM</span>
+                                        <span class="time-slot">9:00 PM</span>
+                                    </div>
+                                </div>
+                                <a href="movie-detail.html?id=galaxy-quest" class="movie-link">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Family Movies -->
+                    <div class="movie-item" data-category="family">
+                        <div class="movie-card">
+                            <div class="movie-poster">
+                                <img src="images/movie5.jpg" alt="Magic Kingdom Movie Poster">
+                                <div class="age-restriction">G</div>
+                            </div>
+                            <div class="movie-info">
+                                <h3>Magic Kingdom</h3>
+                                <p class="movie-genre">Family • Animation</p>
+                                <p class="movie-actors">Starring: Tom Hanks, Emma Stone, Idris Elba</p>
+                                <div class="movie-details">
+                                    <span class="movie-duration">⏱️ 1h 55m</span>
+                                    <span class="movie-rating">⭐ 8.7/10</span>
+                                </div>
+                                <div class="showtimes">
+                                    <h4>Showtimes:</h4>
+                                    <div class="time-slots">
+                                        <span class="time-slot">9:30 AM</span>
+                                        <span class="time-slot">12:30 PM</span>
+                                        <span class="time-slot">4:00 PM</span>
+                                        <span class="time-slot">7:00 PM</span>
+                                    </div>
+                                </div>
+                                <a href="movie-detail.html?id=magic-kingdom" class="movie-link">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Thriller Movies -->
+                    <div class="movie-item" data-category="thriller">
+                        <div class="movie-card">
+                            <div class="movie-poster">
+                                <img src="images/movie6.jpeg" alt="Shadow Protocol Movie Poster">
+                                <div class="age-restriction">R</div>
+                            </div>
+                            <div class="movie-info">
+                                <h3>Shadow Protocol</h3>
+                                <p class="movie-genre">Thriller • Mystery</p>
+                                <p class="movie-actors">Starring: Denzel Washington, Charlize Theron, Jake Gyllenhaal</p>
+                                <div class="movie-details">
+                                    <span class="movie-duration">⏱️ 2h 10m</span>
+                                    <span class="movie-rating">⭐ 8.9/10</span>
+                                </div>
+                                <div class="showtimes">
+                                    <h4>Showtimes:</h4>
+                                    <div class="time-slots">
+                                        <span class="time-slot">11:30 AM</span>
+                                        <span class="time-slot">3:00 PM</span>
+                                        <span class="time-slot">6:45 PM</span>
+                                        <span class="time-slot">10:15 PM</span>
+                                    </div>
+                                </div>
+                                <a href="movie-detail.html?id=shadow-protocol" class="movie-link">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Pine City Mall</h3>
+                    <p>Your premier shopping destination in the heart of the city.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="shops.html">Shops</a></li>
+                        <li><a href="map.html">Map</a></li>
+                        <li><a href="movies.html">Movies</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📍 123 Mall Street, Pine City</p>
+                    <p>📞 (555) 123-4567</p>
+                    <p>✉️ info@pinecitymall.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Business Hours</h4>
+                    <p>Mon-Sat: 9:00 AM - 9:00 PM</p>
+                    <p>Sunday: 10:00 AM - 8:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pine City Mall. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/movies.js"></script>
+</body>
+</html>

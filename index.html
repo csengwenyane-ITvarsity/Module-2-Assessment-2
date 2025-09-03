@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pine City Mall - Your Premier Shopping Destination</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/home.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Pine City Mall</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="map.html" class="nav-link">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="shops.html" class="nav-link">Shops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="movies.html" class="nav-link">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="animate-fade-in-up">Welcome to Pine City Mall</h1>
+                    <p class="animate-fade-in-up">Discover the ultimate shopping experience with over 200+ stores, world-class entertainment, and exceptional dining options. Your premier destination for fashion, technology, and lifestyle.</p>
+                    <div class="hero-buttons">
+                        <a href="shops.html" class="btn btn-primary">Explore Shops</a>
+                        <a href="map.html" class="btn btn-outline">View Map</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="special-offers">
+            <div class="container">
+                <h2 class="section-title">Special Offers & Deals</h2>
+                <p class="section-subtitle">Don't miss out on these exclusive offers from your favorite stores</p>
+                <div class="offers-grid">
+                    <div class="offer-card animate-on-scroll">
+                        <div class="offer-header">
+                            <div class="offer-icon">🛍️</div>
+                            <h3 class="offer-title">Fashion Week Sale</h3>
+                        </div>
+                        <p class="offer-description">Up to 70% off on designer clothing, shoes, and accessories. Limited time offer across all fashion stores.</p>
+                        <div class="offer-details">
+                            <span class="offer-price">70% OFF</span>
+                            <span class="offer-validity">Valid until Dec 31</span>
+                        </div>
+                        <a href="shops.html" class="btn btn-accent offer-cta">Shop Now</a>
+                    </div>
+
+                    <div class="offer-card animate-on-scroll">
+                        <div class="offer-header">
+                            <div class="offer-icon">🎬</div>
+                            <h3 class="offer-title">Movie Combo Deal</h3>
+                        </div>
+                        <p class="offer-description">Get movie tickets + popcorn + drink for just $15. Available for all shows this weekend.</p>
+                        <div class="offer-details">
+                            <span class="offer-price">$15</span>
+                            <span class="offer-validity">Weekend Special</span>
+                        </div>
+                        <a href="movies.html" class="btn btn-accent offer-cta">Book Now</a>
+                    </div>
+
+                    <div class="offer-card animate-on-scroll">
+                        <div class="offer-header">
+                            <div class="offer-icon">🍕</div>
+                            <h3 class="offer-title">Food Court Special</h3>
+                        </div>
+                        <p class="offer-description">Buy any main dish and get a free dessert or drink. Valid at all food court restaurants.</p>
+                        <div class="offer-details">
+                            <span class="offer-price">FREE</span>
+                            <span class="offer-validity">All Week</span>
+                        </div>
+                        <a href="map.html" class="btn btn-accent offer-cta">Find Restaurants</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-content">
+                    <h2 class="section-title">Why Choose Pine City Mall?</h2>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">200+</div>
+                            <div class="stat-label">Premium Stores</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Restaurants</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">12</div>
+                            <div class="stat-label">Movie Theaters</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Security</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-links">
+            <div class="container">
+                <h2 class="section-title">Quick Navigation</h2>
+                <p class="section-subtitle">Find what you're looking for quickly and easily</p>
+                <div class="links-grid">
+                    <div class="link-card" onclick="window.location.href='shops.html'">
+                        <div class="link-icon">🏪</div>
+                        <h3 class="link-title">Browse Shops</h3>
+                        <p class="link-description">Explore our diverse collection of retail stores, from fashion to electronics</p>
+                        <div class="link-arrow">→</div>
+                    </div>
+
+                    <div class="link-card" onclick="window.location.href='map.html'">
+                        <div class="link-icon">🗺️</div>
+                        <h3 class="link-title">Mall Map</h3>
+                        <p class="link-description">Navigate easily with our interactive mall map and store locator</p>
+                        <div class="link-arrow">→</div>
+                    </div>
+
+                    <div class="link-card" onclick="window.location.href='movies.html'">
+                        <div class="link-icon">🎬</div>
+                        <h3 class="link-title">Movie Theater</h3>
+                        <p class="link-description">Check out the latest movies and book your tickets online</p>
+                        <div class="link-arrow">→</div>
+                    </div>
+
+                    <div class="link-card" onclick="window.location.href='contact.html'">
+                        <div class="link-icon">📞</div>
+                        <h3 class="link-title">Contact Us</h3>
+                        <p class="link-description">Get in touch with our customer service team for assistance</p>
+                        <div class="link-arrow">→</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-container">
+                    <h2 class="section-title">Stay Updated</h2>
+                    <p class="section-subtitle">Subscribe to our newsletter for exclusive offers, events, and mall updates</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                        <button type="submit" class="newsletter-submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Pine City Mall</h3>
+                    <p>Your premier shopping destination in the heart of the city.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="shops.html">Shops</a></li>
+                        <li><a href="map.html">Map</a></li>
+                        <li><a href="movies.html">Movies</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📍 123 Mall Street, Pine City</p>
+                    <p>📞 (555) 123-4567</p>
+                    <p>✉️ info@pinecitymall.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Business Hours</h4>
+                    <p>Mon-Sat: 9:00 AM - 9:00 PM</p>
+                    <p>Sunday: 10:00 AM - 8:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pine City Mall. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script>
+        // Newsletter form handling
+        document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const submitBtn = this.querySelector('.newsletter-submit');
+            const email = this.querySelector('.newsletter-input').value;
+            
+            // Add loading state
+            submitBtn.classList.add('loading');
+            submitBtn.textContent = 'Subscribing...';
+            
+            // Simulate API call
+            setTimeout(() => {
+                submitBtn.classList.remove('loading');
+                submitBtn.textContent = 'Subscribed!';
+                submitBtn.style.background = 'var(--gradient-secondary)';
+                
+                // Reset form
+                setTimeout(() => {
+                    this.reset();
+                    submitBtn.textContent = 'Subscribe';
+                    submitBtn.style.background = 'var(--gradient-primary)';
+                }, 2000);
+            }, 1500);
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

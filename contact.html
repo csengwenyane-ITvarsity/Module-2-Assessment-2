@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Pine City Mall</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Pine City Mall</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="map.html" class="nav-link">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="shops.html" class="nav-link">Shops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="movies.html" class="nav-link">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="contact-hero">
+            <div class="hero-content">
+                <h1>Contact Us</h1>
+                <p>Get in touch with Pine City Mall</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="mall-image">
+                            <img src="https://via.placeholder.com/600x400/667eea/FFFFFF?text=Pine+City+Mall" alt="Pine City Mall">
+                        </div>
+                        
+                        <div class="info-section">
+                            <h2>Get in Touch</h2>
+                            <div class="info-item">
+                                <div class="info-icon">📍</div>
+                                <div class="info-content">
+                                    <h3>Address</h3>
+                                    <p>123 Mall Street<br>Pine City, PC 12345<br>United States</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <div class="info-icon">📞</div>
+                                <div class="info-content">
+                                    <h3>Phone</h3>
+                                    <p>Main: (555) 123-4567<br>Support: (555) 123-4568<br>Emergency: (555) 911-0000</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <div class="info-icon">✉️</div>
+                                <div class="info-content">
+                                    <h3>Email</h3>
+                                    <p>General: info@pinecitymall.com<br>Support: support@pinecitymall.com<br>Business: business@pinecitymall.com</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hours-section">
+                            <h2>Business Hours</h2>
+                            <div class="hours-grid">
+                                <div class="day-hours">
+                                    <span class="day">Monday - Saturday</span>
+                                    <span class="hours">9:00 AM - 9:00 PM</span>
+                                </div>
+                                <div class="day-hours">
+                                    <span class="day">Sunday</span>
+                                    <span class="hours">10:00 AM - 8:00 PM</span>
+                                </div>
+                                <div class="day-hours">
+                                    <span class="day">Holidays</span>
+                                    <span class="hours">10:00 AM - 6:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-section">
+                        <div class="form-container">
+                            <h2>Send us a Message</h2>
+                            <p>Have a question or feedback? We'd love to hear from you!</p>
+                            
+                            <form id="contactForm" class="contact-form">
+                                <div class="form-group">
+                                    <label for="name">Full Name *</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject">Subject *</label>
+                                    <select id="subject" name="subject" required>
+                                        <option value="">Select a subject</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="feedback">Feedback</option>
+                                        <option value="complaint">Complaint</option>
+                                        <option value="business">Business Opportunity</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">Message *</label>
+                                    <textarea id="message" name="message" rows="5" required placeholder="Please describe your inquiry or feedback..."></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="newsletter" id="newsletter">
+                                        <span class="checkmark"></span>
+                                        Subscribe to our newsletter for updates and special offers
+                                    </label>
+                                </div>
+                                
+                                <button type="submit" class="submit-btn">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h2 class="section-title">Find Us</h2>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <div class="map-content">
+                            <h3>📍 Pine City Mall Location</h3>
+                            <p>We're located in the heart of Pine City, easily accessible by car, public transportation, and walking.</p>
+                            <div class="directions">
+                                <h4>Getting Here:</h4>
+                                <ul>
+                                    <li><strong>By Car:</strong> Take Exit 15 off Highway 101, follow signs to Pine City Mall</li>
+                                    <li><strong>By Bus:</strong> Routes 15, 22, and 45 stop directly at the mall</li>
+                                    <li><strong>By Train:</strong> Pine City Station is a 10-minute walk away</li>
+                                    <li><strong>Parking:</strong> Free parking available in our 3-level parking garage</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Pine City Mall</h3>
+                    <p>Your premier shopping destination in the heart of the city.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="shops.html">Shops</a></li>
+                        <li><a href="map.html">Map</a></li>
+                        <li><a href="movies.html">Movies</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📍 123 Mall Street, Pine City</p>
+                    <p>📞 (555) 123-4567</p>
+                    <p>✉️ info@pinecitymall.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Business Hours</h4>
+                    <p>Mon-Sat: 9:00 AM - 9:00 PM</p>
+                    <p>Sunday: 10:00 AM - 8:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pine City Mall. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

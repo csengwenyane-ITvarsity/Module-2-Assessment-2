@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mall Map - Pine City Mall</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/map.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Pine City Mall</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="map.html" class="nav-link active">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="shops.html" class="nav-link">Shops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="movies.html" class="nav-link">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="map-hero">
+            <div class="hero-content">
+                <h1>Mall Map</h1>
+                <p>Find your way around Pine City Mall</p>
+            </div>
+        </section>
+
+        <section class="map-controls">
+            <div class="container">
+                <div class="level-selector">
+                    <h3>Select Level</h3>
+                    <div class="level-buttons">
+                        <button class="level-btn active" data-level="ground">Ground Floor</button>
+                        <button class="level-btn" data-level="first">First Floor</button>
+                        <button class="level-btn" data-level="second">Second Floor</button>
+                        <button class="level-btn" data-level="parking">Parking</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-display">
+            <div class="container">
+                <div class="map-container">
+                    <!-- Ground Floor -->
+                    <div class="floor-map active" id="ground-floor">
+                        <div class="map-header">
+                            <h2>Ground Floor</h2>
+                            <p>Main entrance, food court, and essential services</p>
+                        </div>
+                        <div class="mall-layout">
+                            <div class="entrance-area">
+                                <div class="area-label">Main Entrance</div>
+                                <div class="shop-marker" data-shop="trendy-threads">
+                                    <span class="marker-icon">👕</span>
+                                    <div class="marker-tooltip">
+                                        <strong>Trendy Threads</strong><br>
+                                        Clothing Store<br>
+                                        <a href="shops.html#trendy-threads">View Details</a>
+                                    </div>
+                                </div>
+                                <div class="shop-marker" data-shop="style-factory">
+                                    <span class="marker-icon">👗</span>
+                                    <div class="marker-tooltip">
+                                        <strong>Style Factory</strong><br>
+                                        Premium Clothing<br>
+                                        <a href="shops.html#style-factory">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="food-court">
+                                <div class="area-label">Food Court</div>
+                                <div class="shop-marker" data-shop="pizza-palace">
+                                    <span class="marker-icon">🍕</span>
+                                    <div class="marker-tooltip">
+                                        <strong>Pizza Palace</strong><br>
+                                        Italian Restaurant<br>
+                                        <a href="shops.html#pizza-palace">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="services-area">
+                                <div class="area-label">Services</div>
+                                <div class="shop-marker" data-shop="fresh-market">
+                                    <span class="marker-icon">🛒</span>
+                                    <div class="marker-tooltip">
+                                        <strong>Fresh Market</strong><br>
+                                        Supermarket<br>
+                                        <a href="shops.html#fresh-market">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="escalators">
+                                <div class="area-label">Escalators</div>
+                                <div class="escalator-up">⬆️</div>
+                                <div class="escalator-down">⬇️</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- First Floor -->
+                    <div class="floor-map" id="first-floor">
+                        <div class="map-header">
+                            <h2>First Floor</h2>
+                            <p>Electronics, restaurants, and entertainment</p>
+                        </div>
+                        <div class="mall-layout">
+                            <div class="electronics-area">
+                                <div class="area-label">Electronics</div>
+                                <div class="shop-marker" data-shop="tech-haven">
+                                    <span class="marker-icon">💻</span>
+                                    <div class="marker-tooltip">
+                                        <strong>Tech Haven</strong><br>
+                                        Electronics Store<br>
+                                        <a href="shops.html#tech-haven">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="restaurant-area">
+                                <div class="area-label">Restaurants</div>
+                                <div class="shop-marker" data-shop="coastal-bites">
+                                    <span class="marker-icon">🦐</span>
+                                    <div class="marker-tooltip">
+                                        <strong>Coastal Bites</strong><br>
+                                        Seafood Restaurant<br>
+                                        <a href="shops.html#coastal-bites">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="beauty-area">
+                                <div class="area-label">Beauty & Health</div>
+                                <div class="shop-marker" data-shop="beauty-glow">
+                                    <span class="marker-icon">💄</span>
+                                    <div class="marker-tooltip">
+                                        <strong>Beauty Glow</strong><br>
+                                        Beauty Store<br>
+                                        <a href="shops.html#beauty-glow">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="escalators">
+                                <div class="area-label">Escalators</div>
+                                <div class="escalator-up">⬆️</div>
+                                <div class="escalator-down">⬇️</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Floor -->
+                    <div class="floor-map" id="second-floor">
+                        <div class="map-header">
+                            <h2>Second Floor</h2>
+                            <p>Sports, movies, and family entertainment</p>
+                        </div>
+                        <div class="mall-layout">
+                            <div class="sports-area">
+                                <div class="area-label">Sports & Fitness</div>
+                                <div class="shop-marker" data-shop="sports-fit">
+                                    <span class="marker-icon">⚽</span>
+                                    <div class="marker-tooltip">
+                                        <strong>Sports Fit</strong><br>
+                                        Sports Equipment<br>
+                                        <a href="shops.html#sports-fit">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="cinema-area">
+                                <div class="area-label">Movie Theaters</div>
+                                <div class="theater-marker">
+                                    <span class="marker-icon">🎬</span>
+                                    <div class="marker-tooltip">
+                                        <strong>Pine City Cinemas</strong><br>
+                                        8 Movie Theaters<br>
+                                        <a href="movies.html">View Movies</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="family-area">
+                                <div class="area-label">Family Entertainment</div>
+                                <div class="entertainment-marker">
+                                    <span class="marker-icon">🎮</span>
+                                    <div class="marker-tooltip">
+                                        <strong>Fun Zone</strong><br>
+                                        Arcade & Games<br>
+                                        Family Entertainment
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="escalators">
+                                <div class="area-label">Escalators</div>
+                                <div class="escalator-up">⬆️</div>
+                                <div class="escalator-down">⬇️</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Parking -->
+                    <div class="floor-map" id="parking-floor">
+                        <div class="map-header">
+                            <h2>Parking Garage</h2>
+                            <p>Free parking on 3 levels</p>
+                        </div>
+                        <div class="mall-layout">
+                            <div class="parking-levels">
+                                <div class="parking-level">
+                                    <div class="area-label">Level P1</div>
+                                    <div class="parking-info">
+                                        <span class="parking-icon">🅿️</span>
+                                        <div class="parking-details">
+                                            <strong>Level P1</strong><br>
+                                            Main Parking<br>
+                                            Access to Ground Floor
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="parking-level">
+                                    <div class="area-label">Level P2</div>
+                                    <div class="parking-info">
+                                        <span class="parking-icon">🅿️</span>
+                                        <div class="parking-details">
+                                            <strong>Level P2</strong><br>
+                                            Extended Parking<br>
+                                            Access to First Floor
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="parking-level">
+                                    <div class="area-label">Level P3</div>
+                                    <div class="parking-info">
+                                        <span class="parking-icon">🅿️</span>
+                                        <div class="parking-details">
+                                            <strong>Level P3</strong><br>
+                                            Overflow Parking<br>
+                                            Access to Second Floor
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="parking-features">
+                                <div class="feature-item">
+                                    <span class="feature-icon">♿</span>
+                                    <span>Accessible Parking</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">🔋</span>
+                                    <span>EV Charging</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">🚗</span>
+                                    <span>Valet Service</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-legend">
+            <div class="container">
+                <h3>Map Legend</h3>
+                <div class="legend-grid">
+                    <div class="legend-item">
+                        <span class="legend-icon">👕</span>
+                        <span>Clothing Stores</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-icon">💻</span>
+                        <span>Electronics</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-icon">🍕</span>
+                        <span>Restaurants</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-icon">🛒</span>
+                        <span>Supermarkets</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-icon">🎬</span>
+                        <span>Movie Theaters</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-icon">🅿️</span>
+                        <span>Parking</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-icon">⬆️⬇️</span>
+                        <span>Escalators</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Pine City Mall</h3>
+                    <p>Your premier shopping destination in the heart of the city.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="shops.html">Shops</a></li>
+                        <li><a href="map.html">Map</a></li>
+                        <li><a href="movies.html">Movies</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📍 123 Mall Street, Pine City</p>
+                    <p>📞 (555) 123-4567</p>
+                    <p>✉️ info@pinecitymall.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Business Hours</h4>
+                    <p>Mon-Sat: 9:00 AM - 9:00 PM</p>
+                    <p>Sunday: 10:00 AM - 8:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pine City Mall. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/map.js"></script>
+</body>
+</html>
